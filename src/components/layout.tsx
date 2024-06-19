@@ -1,5 +1,3 @@
-import { useRouter } from 'next/router'
-
 import { Page } from '@bacondotbuild/ui'
 
 import Meta from '@/components/meta'
@@ -13,7 +11,6 @@ const Layout = ({
   title?: string
   children: React.ReactNode
 }) => {
-  const { pathname } = useRouter()
   return (
     <Page>
       <Meta
