@@ -15,7 +15,7 @@ export default function MarkdownPage() {
   if (isLoading || !note)
     return (
       <Layout>
-        <Main className='flex flex-col p-4'>
+        <Main className='flex flex-col md:p-4'>
           <div className='flex flex-grow flex-col items-center justify-center space-y-4'>
             <Loading />
           </div>
@@ -24,7 +24,7 @@ export default function MarkdownPage() {
     )
   return (
     <Layout>
-      <Main className='flex flex-col p-4'>
+      <Main className='flex flex-col md:p-4'>
         <div className='flex flex-grow flex-col items-center justify-center space-y-4'>
           <Markdown content={note.markdown ?? ''} />
         </div>
